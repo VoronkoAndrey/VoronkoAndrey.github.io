@@ -1,0 +1,361 @@
+/*Шрифты*/
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v18-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v18-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/montserrat-v18-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v18-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+  html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  background-color:#E9E9E9 ;
+}
+
+ /*Body header start*/
+.header{
+  max-width: 1920px;
+  position:relative;
+}
+
+.wrapper {
+  max-width: 1620px;
+  margin: 0 auto;
+}
+
+.wrapperFull{
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
+.sectionTitle{
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 43px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.sectionTitle::after{
+  display: block;
+  content: '';
+  width: 253px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.headerWrapper{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.headerList{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headerItem{
+  margin-right: 43px;
+  padding-bottom: 34px;
+}
+
+.headerWrapperLink{
+  padding-left: 65px;  
+}
+
+.headerLogoPic{
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  top: 24px;
+}
+
+.headerLink{
+  font-size: 30px;
+  line-height: 43px;
+  text-decoration: none;
+  color: #000000; 
+}
+
+.headerLink:hover, .headerLink:focus, .headerLink:active{
+  opacity: 50%;
+}
+
+
+
+.headerAudi{
+  max-width: 1920px;
+  margin-bottom: 120px;
+}
+
+.headerAudiPic{ 
+  width: 100%;
+  height: auto;
+}
+
+.headerAudiBlock{
+  position: relative;
+  margin: 2px auto; 
+}
+
+.hamburger 
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 50px;
+    height: fit-content;
+    margin: -35% 90%;
+}
+.hamburger:hover,.hamburger:active,.hamburger:focus{
+  opacity: 50%;
+} 
+.hamburger  hr
+ {
+   width: 100%;
+   height: 5px;
+   border: none;
+   background: white;
+   margin: 0 0 0 auto;
+}
+.hamburger hr.line2
+ {
+  width: 100%;
+  height: 5px;
+  border: none;
+  background: white;
+  margin: 0 0 0 auto;
+}
+.hamburger hr.line3
+ {
+   width: 100%;
+   height: 5px;
+   border: none;
+   background: white;
+   margin: 0 0 0 auto;
+}
+
+
+/*Body header emd*/
+
+/*History start*/
+.history{
+  margin-bottom: 140px;
+}
+
+.headingHistory{
+  padding-bottom: 30px;
+}
+
+.historyTitle{
+  margin-bottom: 35px;
+  margin-right: 15px;
+}
+
+.historyCards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);;
+  grid-gap: 20px;
+}
+
+.historyCard{
+  position: relative;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.historyCard:hover .historyCardPic{
+  transform: scale(1.05);
+}
+
+.historyCard::after{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.historyCardSizeLg{
+  grid-column: span 2;
+  
+}
+
+.historyCardPic{
+  width: 100%;
+  height: 322.66px;
+  object-fit: cover;
+  transition: .15s;
+}
+
+.historyCardTitle{
+  font-size: 30px;
+  line-height: 43px;
+  text-decoration: none;
+  color: #000000; 
+  position: absolute;
+  top: 330px;
+  left:50px;
+  z-index: 3;
+}
+
+.historyCardLink{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+ .historyCardTitle:hover, .historyCardTitle:active, .historyCardTitle:focus{
+  opacity: 50%;
+} 
+/*History end*/
+
+/*News start*/
+.news{
+  margin-bottom: 130px;
+}
+
+.headingNews{
+  padding-bottom: 30px;
+}
+
+.newsCard{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 15px;
+  margin-bottom: 30px;
+}
+
+.newsCardPic{
+  width: 100%;
+  height: 333px;
+}
+
+.newsCardLink{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 43px;
+  text-decoration: none;
+  color: #000000; 
+}
+
+.newsCardLink:hover,.newsCardLink:active,.newsCardLink:focus{
+  opacity: 50%;
+}
+
+.newsCarsText{
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 33px;
+  text-decoration: none;
+  color: #000000; 
+}
+
+/*News end*/
+
+/*Videos start*/
+
+.videos{
+  width: 100%;
+  
+}
+
+.videosWrapper{
+  max-width: 1440px;
+  margin:0 auto;
+  position: relative;
+
+}
+
+.videoItem{
+  padding-top: 56.25%;
+}
+
+.videoElement{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Videos end*/
+
+/*Footer start*/
+
+.footer{
+  padding: 50px 0;;
+}
+
+.footerItem{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerLogo{
+  font-size: 20px;
+  line-height: 43px;
+}
+
+.footerLink{
+  font-size: 20px;
+  line-height: 43px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+}
+
+.bold{
+  font-size: 20px;
+  line-height: 43px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Footer end*/
