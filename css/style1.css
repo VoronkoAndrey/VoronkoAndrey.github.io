@@ -42,7 +42,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
-  background-color:#E9E9E9 ;
+  background-color:#d3d3d3;
 }
 
  /*Body header start*/
@@ -116,7 +116,7 @@ body {
 }
 
 .headerLink:hover, .headerLink:focus, .headerLink:active{
-  opacity: 50%;
+  opacity: 65%;
 }
 
 
@@ -348,6 +348,10 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: #000000;
+}
+
+.footerLink:hover,.footerLink:active,.footerLink:focus{
+  opacity: 65%;
 }
 
 .bold{
